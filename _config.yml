@@ -1,7 +1,7 @@
 # Site settings
 title: Bioinformatics Barnhouse
 SEOTitle: Bioinformatics Barnhouse | BY Ezio0o
-header-img: img/post-bg-desk.jpg
+header-img: img/post-bg-keybord.jpg
 email: jinyuanpku@gmail.com
 description: "connect the dots"
 keyword: "Bioinformatics,daily"
@@ -12,7 +12,7 @@ github_repo: "https://github.com/Ezio0o/barnhouse.github.io.git" # you code repo
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "找到本心"
-sidebar-avatar: /img/about-BY-gentle.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: /img/avatar.gif      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 

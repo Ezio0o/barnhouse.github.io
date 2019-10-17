@@ -1,42 +1,46 @@
----
-layout: page
-description: "Thinking will not overcome fear but action will."
----
-
-{% for post in paginator.posts %}
-<div class="post-preview">
-    <a href="{{ post.url | prepend: site.baseurl }}">
-        <h2 class="post-title">
-            {{ post.title }}
-        </h2>
-        {% if post.subtitle %}
-        <h3 class="post-subtitle">
-            {{ post.subtitle }}
-        </h3>
-        {% endif %}
-        <div class="post-content-preview">
-            {{ post.content | strip_html | truncate:200 }}
-        </div>
-    </a>
-    <p class="post-meta">
-        Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}
-    </p>
-</div>
-<hr>
-{% endfor %}
-
-<!-- Pager -->
-{% if paginator.total_pages > 1 %}
-<ul class="pager">
-    {% if paginator.previous_page %}
-    <li class="previous">
-        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
-    </li>
-    {% endif %}
-    {% if paginator.next_page %}
-    <li class="next">
-        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
-    </li>
-    {% endif %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1671.6">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 12.0px Times; color: #0000e9; -webkit-text-stroke: #0000e9}
+    p.p5 {margin: 0.0px 0.0px 12.0px 0.0px; line-height: 14.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000}
+    p.p6 {margin: 0.0px 0.0px 6.0px 0.0px; line-height: 14.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000; min-height: 12.0px}
+    li.li1 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000}
+    li.li3 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 12.0px Times; color: #0000e9; -webkit-text-stroke: #0000e9}
+    span.s1 {font-kerning: none}
+    span.s2 {text-decoration: underline ; font-kerning: none}
+    span.s3 {font: 14.0px Times; text-decoration: underline ; font-kerning: none}
+    span.s4 {font: 12.0px Times; text-decoration: underline ; font-kerning: none}
+    span.s5 {-webkit-text-stroke: 0px #000000}
+    span.s6 {font: 12.0px Symbol; text-decoration: underline ; font-kerning: none; color: #0000e9}
+    span.s7 {text-decoration: underline ; font-kerning: none; color: #0000e9}
+    span.s8 {font-kerning: none; color: #000000; -webkit-text-stroke: 0px #000000}
+    ul.ul1 {list-style-type: disc}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1">--- layout: page description: “Biology Miner” --- {% for post in paginator.posts %}</span></p>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 22.0px; font: 18.0px Times; color: #0000e9; -webkit-text-stroke: #0000e9"><span class="s2"><a href="file:///Users/guojinyuan/Documents/GitHub/Ezio0o.github.io/%7B%7B%20post.url%20%7C%20prepend:%20site.baseurl%20%7D%7D"><b>{{ post.title }}<span class="Apple-converted-space"> </span></b></a></span></h2>
+<p class="p3"><span class="s2"><a href="file:///Users/guojinyuan/Documents/GitHub/Ezio0o.github.io/%7B%7B%20post.url%20%7C%20prepend:%20site.baseurl%20%7D%7D">{% if post.subtitle %}</a></span></p>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; line-height: 17.0px; font: 14.0px Times; color: #0000e9; -webkit-text-stroke: #0000e9"><span class="s2"><a href="file:///Users/guojinyuan/Documents/GitHub/Ezio0o.github.io/%7B%7B%20post.url%20%7C%20prepend:%20site.baseurl%20%7D%7D"><b>{{ post.subtitle }}<span class="Apple-converted-space"> </span></b><span class="s3"><b></b></span></a></span></h3>
+<p class="p3"><span class="s2"><a href="file:///Users/guojinyuan/Documents/GitHub/Ezio0o.github.io/%7B%7B%20post.url%20%7C%20prepend:%20site.baseurl%20%7D%7D">{% endif %}</a></span></p>
+<p class="p3"><span class="s2"><a href="file:///Users/guojinyuan/Documents/GitHub/Ezio0o.github.io/%7B%7B%20post.url%20%7C%20prepend:%20site.baseurl%20%7D%7D">{{ post.content | strip_html | truncate:200 }}<span class="Apple-converted-space"> </span><span class="s4"></span></a></span></p>
+<p class="p5"><span class="s1">Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}<span class="Apple-converted-space"> </span></span></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">{% endfor %} {% if paginator.total_pages &gt; 1 %}</span></p>
+<ul class="ul1">
+  <li class="li1"><span class="s5"></span><span class="s1">{% if paginator.previous_page %}</span></li>
+  <li class="li3"><span class="s5"><a href="file:///Users/guojinyuan/Documents/GitHub/Ezio0o.github.io/%7B%7B%20paginator.previous_page_path%20%7C%20prepend:%20site.baseurl%20%7C%20replace:%20'//',%20'/'%20%7D%7D"><span class="s6">←</span><span class="s7"> Newer Posts</span></a></span><span class="s8"><span class="Apple-converted-space"> </span></span></li>
+  <li class="li1"><span class="s5"></span><span class="s1">{% endif %} {% if paginator.next_page %}</span></li>
+  <li class="li3"><span class="s5"><a href="file:///Users/guojinyuan/Documents/GitHub/Ezio0o.github.io/%7B%7B%20paginator.next_page_path%20%7C%20prepend:%20site.baseurl%20%7C%20replace:%20'//',%20'/'%20%7D%7D"><span class="s7">Older Posts </span><span class="s6">→</span></a></span><span class="s8"><span class="Apple-converted-space"> </span></span></li>
+  <li class="li1"><span class="s5"></span><span class="s1">{% endif %}<span class="Apple-converted-space"> </span></span></li>
 </ul>
-{% endif %}
+<p class="p1"><span class="s1">{% endif %}<span class="Apple-converted-space"> </span></span></p>
+</body>
+</html>
